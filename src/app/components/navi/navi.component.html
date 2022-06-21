@@ -1,0 +1,394 @@
+<!-- SM SOCİAL -->
+<nav class="navbar sticky-top navbar-expand navbar-custom navbar-dark bg-dark one d-lg-none"
+    aria-label="Second navbar example">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+
+                <!-- LG LİST -->
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link p-2" href="https://wa.me/905425190940" target="_blank" rel="noopener">
+                        <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link p-2" href="https://www.instagram.com/allentplastik/" target="_blank"
+                        rel="noopener">
+                        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link p-2" href="#" target="_blank" rel="noopener">
+                        <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link p-2" href="https://www.linkedin.com/company/allent-plastik/" target="_blank"
+                        rel="noopener">
+                        <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li> -->
+
+                <!-- SM LİST -->
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="https://wa.me/905425190940" target="_blank" rel="noopener">
+                        <i class="fa fa-whatsapp fa-sm" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="https://www.instagram.com/allentplastik/" target="_blank" rel="noopener">
+                        <i class="fa fa-instagram fa-sm" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="#" target="_blank" rel="noopener">
+                        <i class="fa fa-facebook fa-sm" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="https://www.linkedin.com/company/allent-plastik/" target="_blank"
+                        rel="noopener">
+                        <i class="fa fa-linkedin fa-sm" aria-hidden="true"></i>
+                    </a>
+                </li> -->
+
+            </ul>
+            <div>
+                <ul class="friend-list sm">
+                    <li class="sm">
+                        <div class="left" style="margin-right: 0px;">
+                            <i class="fa fa-phone sm text-white fa-sm"></i>
+                        </div>
+                        <div class="right">
+                            <a href="tel:{{getTranslate('gsmFromDb')}}" class="text-white sm">
+                                {{getTranslate('gsmFromDb')}}
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- SM SOCİAL END -->
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-custom bg-light bd-navbar two">
+    <div class="container-xl flex-wrap flex-md-nowrap">
+
+        <!-- NAVBAR BRAND -->
+        <a class="navbar-brand d-flex align-items-center" routerLink="/">
+            <!-- lg -->
+            <img *ngIf="getCurrentLanguageCode() === 'tr-TR'" src="assets/logo/logo.png" height="60"
+                class="d-inline-block align-text-top d-none d-lg-block img-custom">
+            <img *ngIf="getCurrentLanguageCode() === 'en-US'" src="assets/logo/logo.png" height="60"
+                class="d-inline-block align-text-top d-none d-lg-block img-custom">
+
+            <!-- sm -->
+            <img *ngIf="getCurrentLanguageCode() === 'tr-TR'" src="assets/logo/logo.png" height="50"
+                class="d-inline-block align-text-top d-lg-none">
+            <img *ngIf="getCurrentLanguageCode() === 'en-US'" src="assets/logo/logo.png" height="50"
+                class="d-inline-block align-text-top d-lg-none">
+
+            <!-- <h4 class="d-lg-none ms-2 font-arial"><strong>A L L E N T</strong> Plastik & Kalıp</h4> -->
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></span>
+        </button>
+
+        <!-- LG NAVBAR -->
+        <div class="d-none d-lg-block collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0 text-start text-custom">
+                <!-- flex-row vardı -->
+                <li class="nav-item col-md-auto d-lg-none">
+                    <a class="nav-link nav-link-custom" aria-current="page" routerLink="/">
+                        {{getTranslate("homePage")}}
+                    </a>
+                </li>
+                <li class="nav-item col-md-auto">
+                    <a class="nav-link nav-link-custom" aria-current="page" routerLink="/about-us">
+                        {{getTranslate("aboutUs")}}
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        {{getTranslate('ourServices')}}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" style="white-space: normal;"
+                                (click)="navigate('/our-services/mold-manufacturing', 'mold-manufacturing')">
+                                {{getTranslate('moldManufacturing')}}
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" style="white-space: normal;"
+                                (click)="navigate('/our-services/product-design', 'product-design')">
+                                {{getTranslate('productDesign')}}
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" style="white-space: normal;"
+                                (click)="navigate('/our-services/injection-production', 'injection-production')">
+                                {{getTranslate('injectionProduction')}}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item col-md-auto">
+                    <!-- her birinde col 6 vardı -->
+                    <a class="nav-link nav-link-custom" aria-current="page" routerLink="/gallery">
+                        {{getTranslate("gallery")}}
+                    </a>
+                </li>
+                <li class="nav-item col-md-auto">
+                    <a class="nav-link nav-link-custom" aria-current="page" routerLink="/references">
+                        {{getTranslate("references")}}
+                    </a>
+                </li>
+                <li class="nav-item col-md-auto">
+                    <a class="nav-link nav-link-custom" aria-current="page" routerLink="/contact">
+                        {{getTranslate("contact")}}
+                    </a>
+                </li>
+            </ul>
+
+            <hr class="d-md-none text-dark-50">
+
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-items-center text-start text-custom">
+
+                <li class="nav-item col-12 col-lg-auto">
+                    <!-- LG -->
+                    <a class="nav-link p-2 d-none d-lg-block" href="https://wa.me/905425190940" target="_blank"
+                        rel="noopener">
+                        <i class="fa fa-whatsapp" style="font-size: 24px;" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item col-12 col-lg-auto">
+                    <!-- LG -->
+                    <a class="nav-link p-2 d-none d-lg-block" href="https://www.instagram.com/allentplastik/"
+                        target="_blank" rel="noopener">
+                        <i class="fa fa-instagram" style="font-size: 24px;" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item col-12 col-lg-auto">
+                    <a class="nav-link p-2 d-none d-lg-block" href="#" target="_blank" rel="noopener">
+                        <i class="fa fa-facebook" style="font-size: 24px;" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item col-12 col-lg-auto">
+                    <a class="nav-link p-2 d-none d-lg-block" href="https://www.linkedin.com/company/allent-plastik/"
+                        target="_blank" rel="noopener">
+                        <i class="fa fa-linkedin" style="font-size: 24px;" aria-hidden="true"></i>
+                    </a>
+                </li> -->
+
+
+                <!-- LG -->
+                <li class="nav-item col-6 col-lg-auto d-none d-lg-block">
+                    <a class="nav-link p-2" aria-current="page">
+                        <ul class="friend-list">
+                            <li class="lg">
+                                <div class="left" style="margin-right: 0px;">
+
+                                </div>
+                                <div class="right">
+                                    <h3 class="d-flex justify-content-center lg">
+                                        <i class="fa fa-phone lg" style="font-size: 20px; margin-left: 0px;"></i>
+                                    </h3>
+                                    <p class="text-dark lg">{{getTranslate('gsmFromDb')}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+
+                <!-- Language -->
+                <!-- <li class="nav-item dropdown dropdown-menu-end ">
+                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="flag-icon flag-icon-{{getCurrentLanguage().flagCode}} flag-icon-squared"></span>
+                        {{getCurrentLanguage()!.languageName}}
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+                        <li *ngFor="let language of languages">
+                            <a class="dropdown-item" (click)="setLanguage(language.code)">
+                                <span class="flag-icon flag-icon-{{language.flagCode}} flag-icon-squared"></span>
+                                {{language.languageName}}
+                            </a>
+                        </li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div> <!-- END - LG NAVBAR -->
+
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+
+        <!-- SM NAVBAR -->
+        <div class="d-lg-none offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0 text-start text-custom">
+                    <li class="nav-item col-md-auto d-lg-none">
+                        <a class="nav-link nav-link-home nav-link-custom active" data-bs-dismiss="offcanvas"
+                            aria-current="page" routerLink="/">
+                            {{getTranslate("homePage")}}
+                        </a>
+                    </li>
+                    <li class="nav-item col-md-auto ">
+                        <a class="nav-link nav-link-custom" data-bs-dismiss="offcanvas" aria-current="page"
+                            routerLink="/about-us">
+                            {{getTranslate("aboutUs")}}
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            {{getTranslate('ourServices')}}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" data-bs-dismiss="offcanvas" style="white-space: normal;"
+                                    (click)="navigate('/our-services/mold-manufacturing', 'mold-manufacturing')">
+                                    {{getTranslate('moldManufacturing')}}
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" data-bs-dismiss="offcanvas" style="white-space: normal;"
+                                    (click)="navigate('/our-services/product-design', 'product-design')">
+                                    {{getTranslate('productDesign')}}
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" data-bs-dismiss="offcanvas" style="white-space: normal;"
+                                    (click)="navigate('/our-services/injection-production', 'injection-production')">
+                                    {{getTranslate('injectionProduction')}}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item col-md-auto">
+                        <a class="nav-link nav-link-custom" data-bs-dismiss="offcanvas" aria-current="page"
+                            routerLink="/gallery">
+                            {{getTranslate("gallery")}}
+                        </a>
+                    </li>
+                    <li class="nav-item col-md-auto">
+                        <a class="nav-link nav-link-custom" data-bs-dismiss="offcanvas" aria-current="page"
+                            routerLink="/references">
+                            {{getTranslate("references")}}
+                        </a>
+                    </li>
+                    <li class="nav-item col-md-auto">
+                        <a class="nav-link nav-link-custom" data-bs-dismiss="offcanvas" aria-current="page"
+                            routerLink="/contact">
+                            {{getTranslate("contact")}}
+                        </a>
+                    </li>
+                </ul>
+
+                <hr class="d-md-none text-dark-50">
+
+                <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-items-center text-start text-custom">
+
+                    <li class="nav-item col-12 col-lg-auto">
+                        <!-- SM -->
+                        <a class="nav-link d-lg-none" data-bs-dismiss="offcanvas" href="https://wa.me/905425190940"
+                            target="_blank" rel="noopener">
+                            <i class="fa fa-whatsapp" style="font-size: 21px; min-width: 18px;" aria-hidden="true"></i>
+                            <small class="ms-2 text-secondary">Whatsapp</small>
+                        </a>
+                    </li>
+
+                    <li class="nav-item col-12 col-lg-auto">
+                        <!-- SM -->
+                        <a class="nav-link d-lg-none" data-bs-dismiss="offcanvas"
+                            href="https://www.instagram.com/allentplastik/" target="_blank" rel="noopener">
+                            <i class="fa fa-instagram" style="font-size: 21px; min-width: 18px;" aria-hidden="true"></i>
+                            <small class="ms-2 text-secondary">İnstagram</small>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item col-12 col-lg-auto">
+                        <a class="nav-link d-lg-none" data-bs-dismiss="offcanvas" href="#" target="_blank"
+                            rel="noopener">
+                            <i class="fa fa-facebook" style="font-size: 21px; min-width: 18px;" aria-hidden="true"></i>
+                            <small class="ms-2 text-secondary">Facebook</small>
+                        </a>
+                    </li>
+
+                    <li class="nav-item col-12 col-lg-auto">
+                        <a class="nav-link d-lg-none" data-bs-dismiss="offcanvas"
+                            href="https://www.linkedin.com/company/allent-plastik/" target="_blank" rel="noopener">
+                            <i class="fa fa-linkedin" style="font-size: 21px; min-width: 18px;" aria-hidden="true"></i>
+                            <small class="ms-2 text-secondary">Linkedin</small>
+                        </a>
+                    </li> -->
+
+                    <!-- SM -->
+                    <li class="nav-item col-12 col-lg-auto d-lg-none mb-3">
+                        <a class="nav-link" aria-current="page" href="tel:{{getTranslate('gsmFromDb')}}">
+                            <ul class="friend-list sm">
+                                <li class="sm">
+                                    <div class="left" style="margin-right: 0px;">
+                                        <i class="fa fa-phone sm" style="font-size: 20px; margin-left: 0px;"></i>
+                                    </div>
+                                    <div class="right">
+                                        <p class="text-dark sm">{{getTranslate('gsmFromDb')}}</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+
+                    <!-- Language -->
+                    <li class="nav-item dropdown dropdown-menu-end">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <!-- <i class="fa fa-cog mr-1"></i>  -->
+                            <span
+                                class="flag-icon flag-icon-{{getCurrentLanguage().flagCode}} flag-icon-squared"></span>
+                            {{getCurrentLanguage()!.languageName}}
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+                            <li *ngFor="let language of languages">
+                                <a class="dropdown-item" (click)="setLanguage(language.code)">
+                                    <span class="flag-icon flag-icon-{{language.flagCode}} flag-icon-squared"></span>
+                                    {{language.languageName}}
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

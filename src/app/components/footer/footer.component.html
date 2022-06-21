@@ -1,0 +1,167 @@
+<footer>
+    <div class="bd-footer bg-light text-custom pt-5">
+        <!-- bg-light -->
+        <div class="container pt-5 pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 mb-3">
+                    <ul class="list-unstyled small">
+                        <!-- text-muted -->
+                        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                            aria-label="Allent Plastik">
+                            <img src="assets/logo/logo.png" height="32"
+                                class="d-inline-block align-text-top me-2">
+                            <h3 class="text-custom">{{getTranslate('footerBrand')}}</h3>
+                            <!-- San. ve Tic. Ltd. Şti. -->
+                        </a>
+                        <li class="mb-2 text-muted">
+                            {{getTranslate('footerDescriptionFromDb')}}
+                        </li>
+                        <!-- <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE"
+                              target="_blank" rel="license noopener">MIT</a>, docs <a
+                              href="https://creativecommons.org/licenses/by/3.0/" target="_blank"
+                              rel="license noopener">CC BY 3.0</a>.</li>
+                      <li class="mb-2">Currently v5.1.0.</li> -->
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div class="col-12 offset-lg-1 col-lg-2 mb-3">
+                    <h3>{{getTranslate("social")}}</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="link-dark link" href="https://wa.me/905425190940">
+                                <i class="fa fa-whatsapp" style="font-size: 21px; min-width: 18px;"
+                                    aria-hidden="true"></i>
+                                Whatsapp
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" href="https://www.instagram.com/allentplastik/">
+                                <i class="fa fa-instagram" style="font-size: 21px; min-width: 18px;"
+                                    aria-hidden="true"></i>
+                                İnstagram
+                            </a>
+                        </li>
+                        <!-- <li class="mb-2">
+                            <a class="link-dark link" href="#">
+                                <i class="fa fa-facebook" style="font-size: 21px; min-width: 18px;"
+                                    aria-hidden="true"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" href="https://www.linkedin.com/company/allent-plastik/">
+                                <i class="fa fa-linkedin" style="font-size: 21px; min-width: 18px;"
+                                    aria-hidden="true"></i>
+                                Linkedin
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <div class="col-12 col-lg-2 mb-3">
+                    <h3>{{getTranslate("menu")}}</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="link-dark link" routerLink="/machine-parkour">
+                                {{getTranslate('machineParkour')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" routerLink="/account-info">
+                                {{getTranslate('accountInfo')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" routerLink="/corporate-info">
+                                {{getTranslate('invoiceInformation')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" routerLink="/downloadable-content">
+                                {{getTranslate('downloadableContent')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" routerLink="/cookie-policy">
+                                {{getTranslate('cookiePolicy')}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-12 col-lg-3 offset-lg-1 mb-3">
+                    <h3>{{getTranslate("contact")}}</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="link-dark link" href="mailto:{{getTranslate('email2FromDb')}}">
+                                <i class="fa fa-envelope me-1"></i>
+                                {{getTranslate('email2FromDb')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" href="mailto:{{getTranslate('email1FromDb')}}">
+                                <i class="fa fa-envelope me-1"></i>
+                                {{getTranslate('email1FromDb')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link" href="tel:{{getTranslate('gsmFromDb')}}">
+                                <i class="fa fa-phone me-1"></i>
+                                {{getTranslate('gsmFromDb')}}
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-dark link">
+                                <i class="fa fa-phone me-1"></i>
+                                {{getTranslate('phoneNumberFromDb')}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-6 col-lg-1 mb-3">
+                    <h3>{{getTranslate("aboutUs")}}</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="link-dark link"
+                                routerLink="/about-us">{{getTranslate("whoAreWe")}}</a></li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="assets/logo/allent-logo-lg.webp" height="24"
+                            class="d-inline-block align-text-top me-2">
+                    </a> -->
+                    <span class="text-muted">
+                        Copyrights
+                        <a class="link-dark link" href="#">utkuzincir.com</a>
+                        All rights reserved.
+                    </span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="text-muted" href="https://wa.me/905425190940">
+                            <i class="fa fa-whatsapp" style="font-size: 24px;"></i>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-muted" href="https://www.instagram.com/allentplastik/">
+                            <i class="fa fa-instagram" style="font-size: 24px;"></i>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <span class="text-muted ms-2">
+                            Designed by
+                            <a class="link-dark link" href="mailto:dagbfatih@hotmail.com">Dagbfatih</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,14 +1,10 @@
 .row {
   overflow-x: auto;
   min-height: 95vh;
+  background-color: var(--app-background-color);
 }
 
 .col {
   padding-left: 0px;
   padding-right: 0px;
 }
-
-/* :host{
-    overflow: hidden;
-    display: block;
-  } */

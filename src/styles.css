@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --app-background-color: #181a1b;
+  --app-home-color: rgb(255, 255, 255);
+  --app-default-color: rgb(1, 216, 169);
+  --app-offcanvas-color: #fff;
+  /* --app-footer-color: #212529; */
+  --app-footer-color: #212529;
+  --text-muted: #6c757d;
+}
