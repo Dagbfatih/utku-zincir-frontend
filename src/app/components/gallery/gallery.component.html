@@ -1,0 +1,61 @@
+<div class="container-xxl mt-5 w-100">
+    <div
+        class="d-flex justify-content-start flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-5 border-bottom ps-lg-2">
+        <h1 class="my-title">Galeri</h1>
+    </div>
+
+    <!-- LG -->
+    <div class="d-none d-lg-block mb-5">
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div *ngFor="let chain of chains; let i = index;" class="col">
+                <div class="card bg-light h-100">
+                    <!-- border-light -->
+                    <img [src]="chain.imagePath" class="card-img-top" alt="..."
+                        (click)="open(chain.imagePath, content)">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{chain.name}}
+                        </h5>
+                        <p class="card-text text-muted" style="overflow-wrap: break-word;">
+                            {{chain.description}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SM -->
+    <div class="d-lg-none mb-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div *ngFor="let chain of chains; let i = index;" class="col">
+                <div class="card tex-white bg-light h-100">
+                    <!-- border-light -->
+                    <img [src]="chain.imagePath" class="card-img-top" alt="..."
+                        (click)="open(chain.imagePath, content)">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{chain.name}}
+                        </h5>
+                        <p class="card-text text-muted" style="overflow-wrap: break-word; white-space: pre-wrap;">
+                            {{chain.description}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <div class="d-flex justify-content-center align-items-center">
+            <img [src]="currentPhotoPath" class="img-fluid" alt="...">
+        </div>
+    </div>
+</ng-template>

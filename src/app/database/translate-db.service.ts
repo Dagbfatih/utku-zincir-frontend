@@ -431,7 +431,7 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'homePageP1Lead',
-      value: 'Plastik Enjeksiyon Kalıpçılığı',
+      value: 'Zincir Üretimi',
     },
     {
       id: 14,
@@ -505,7 +505,7 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'homePageP2Lead',
-      value: 'Endüstriyel Ürün Geliştirme',
+      value: 'Tasarımsal Yenilikler',
     },
     {
       id: 14,
@@ -581,7 +581,7 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'homePageP3Lead',
-      value: 'Plastik Ürün Üretimi',
+      value: 'Seri Üretim',
     },
     {
       id: 14,

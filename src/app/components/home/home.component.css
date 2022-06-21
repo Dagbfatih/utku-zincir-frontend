@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+  .featurette-heading {
+    color: #595C5F;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 5rem;
+  }
+
+  .featurette-heading-2 {
+    color: #595C5F;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featurette-heading {
+    color: #595C5F;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 5rem;
+  }
+
+  .featurette-heading-2 {
+    color: #595C5F;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 3rem;
+  }
+}
+
+.bd-masthead {
+  background-color: rgb(226, 226, 226);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  color: rgb(175, 168, 158);
+}
+
+.bd-masthead {
+  background-color: rgb(119, 119, 119);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+hr.featurette-divider {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.img-sm {
+  margin-bottom: 1rem;
+}
+
+ul li {
+  color: var(--text-muted);
+}
+
+.list-group .list-group-item {
+  background-color: var(--app-background-color);
+  color: var(--text-muted);
+  border-top: 1px solid #363738;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}
+
+a.unlink {
+  text-decoration: none;
+}
+
+.carousel-img {
+  height: 32rem;
+}

@@ -1,3 +1,4 @@
+import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgModule } from '@angular/core';
@@ -19,8 +20,8 @@ const routes: Routes = [
     component: AboutUsComponent,
   },
   {
-    path: '',
-    component: ContactComponent,
+    path: 'gallery',
+    component: GalleryComponent,
   },
   {
     path: 'contact',

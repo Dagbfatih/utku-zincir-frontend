@@ -1,1 +1,269 @@
-<p>home works!</p>
+<!-- START THE LG  -->
+<div class="container-fluid pe-0 ps-0 w-100 d-none d-lg-block">
+
+    <!-- Carousel -->
+    <div class="bd-masthead">
+        <div class="container-fluid pe-0 ps-0">
+            <div class="row g-0">
+                <div class="col-12 d-flex justify-content-center">
+
+                    <!-- LG -->
+                    <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button *ngFor="let slide of slidesByLg; let i = index;" type="button"
+                                data-bs-target="#myCarousel" [ngClass]="(i === 0) ? 'active' : ''"
+                                [attr.data-bs-slide-to]="i" aria-current="true" aria-label="Slide 1"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item" *ngFor="let slide of slidesByLg; let i = index;"
+                                [ngClass]="(i === 0) ? 'active' : ''" data-bs-interval="5000">
+                                <img [src]="slide.path" class="carousel-img w-100 h-100" alt="...">
+
+                                <div class="container">
+                                    <div class="carousel-caption text-start" style="bottom: initial; top: 40%;">
+                                        <h1 style="white-space: pre-line; max-width: 550px;">
+                                            {{slide.title}}
+                                        </h1>
+                                        <!-- <p>
+                                            {{slide.description}}
+                                        </p> -->
+                                        <!-- <p><a class="btn btn-lg btn-primary" href="#0">{{getTranslate('learnMore')}}</a></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="container marketing" data-bs-spy="scroll" data-bs-target="#myCarousel" data-bs-offset="0" tabindex="0">
+        <div class="row featurette" style="margin-top: 5%;">
+            <div class="col-md-7">
+                <h2 class="featurette-heading" id="0">
+                    {{getTranslate('homePageP1Lead')}}
+                </h2>
+                <p class="lead text-muted">{{getTranslate('homePageP1')}}
+                </p>
+                <ul>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP1/l1')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP1/l2')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP1/l3')}}...</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <img src="https://kaanelektronik.com/wp-content/uploads/2020/05/3.jpg.webp" alt="" width="500" height="500" class="img-fluid">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id="1">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading-2" id="1">
+                    {{getTranslate('homePageP2Lead')}}
+                    <!-- <span class="text-muted">See for yourself.</span> -->
+                </h2>
+                <p class="lead  text-muted">{{getTranslate('homePageP2')}}
+                </p>
+                <ul>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l1')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l2')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l3')}}</p>
+                    </li>
+                    <!-- <li>
+                        <p class="lead">{{getTranslate('homePageP2/l4')}}...</p>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://kaanelektronik.com/wp-content/uploads/2020/05/3.jpg.webp" alt="" width="500" height="500" class="img-fluid">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette mb-5" id="2">
+            <div class="col-md-7">
+                <h2 class="featurette-heading" id="2">{{getTranslate('homePageP3Lead')}}
+                    <!-- <span class="text-muted">{{getTranslate('homePageP3LeadTextMuted')}}.</span> -->
+                </h2>
+                <p class="lead text-muted">
+                    {{getTranslate('homePageP3')}}
+                </p>
+                <p class="lead text-muted">
+                    {{getTranslate('youImagineIt')}}
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://kaanelektronik.com/wp-content/uploads/2020/05/3.jpg.webp" alt="" width="500" height="500" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- <hr class="featurette-divider"> -->
+    </div>
+</div> <!-- /.container -->
+<!-- END THE PC  -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<!-- START THE SM  -->
+<div class="container-fluid pe-0 ps-0 mb-3 w-100 d-lg-none">
+
+    <!-- Carousel -->
+    <div class="bd-masthead">
+        <div class="container-fluid pe-0 ps-0">
+            <div class="row g-0">
+                <div class="col-12 d-flex justify-content-center">
+
+                    <!-- SM -->
+                    <div id="myCarouselForSm" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button *ngFor="let slide of slidesBySm; let i = index;" type="button"
+                                data-bs-target="#myCarouselForSm" [ngClass]="(i === 0) ? 'active' : ''"
+                                [attr.data-bs-slide-to]="i" aria-current="true" aria-label="Slide 1"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item" *ngFor="let slide of slidesBySm; let i = index;"
+                                [ngClass]="(i === 0) ? 'active' : ''" data-bs-interval="5000">
+                                <img [src]="slide.path" class="carousel-img w-100 h-100" alt="...">
+
+                                <div class="container d-none d-md-block d-lg-none">
+                                    <div class="carousel-caption text-center" style="bottom: auto; top: 130px;">
+                                        <h1>{{getTranslate(slide.title)}}</h1>
+                                    </div>
+                                </div>
+                                <div class="container d-md-none">
+                                    <div class="carousel-caption text-center" style="bottom: auto; top: 30px;">
+                                        <h1>{{getTranslate(slide.title)}}</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselForSm"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarouselForSm"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Overview -->
+    <div class="container marketing mt-5" data-bs-spy="scroll" data-bs-target="#myCarousel" data-bs-offset="0"
+        tabindex="0">
+        <div class="row featurette" style="margin-top: 5%;">
+            <div class="col-lg-5">
+                <img src="assets/images/home-page-p1.webp" alt="" width="500" height="500" class="img-fluid img-sm">
+            </div>
+            <div class="col-lg-7">
+                <h2 class="featurette-heading" id="0">
+                    {{getTranslate('homePageP1Lead')}}
+                </h2>
+                <p class="lead text-muted">{{getTranslate('homePageP1')}}
+                </p>
+                <ul>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP1/l1')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP1/l2')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP1/l3')}}...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id="1">
+            <div class="col-lg-5 order-md-1">
+                <img src="assets/images/home-page-p2.webp" alt="" width="500" height="500" class="img-fluid img-sm">
+            </div>
+            <div class="col-lg-7 order-md-2">
+                <h2 class="featurette-heading-2" id="1">
+                    {{getTranslate('homePageP2Lead')}}
+                </h2>
+                <p class="lead text-muted">
+                    {{getTranslate('homePageP2')}}
+                </p>
+                <ul>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l1')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l2')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l3')}}</p>
+                    </li>
+                    <li>
+                        <p class="lead">{{getTranslate('homePageP2/l4')}}...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" id="2">
+            <div class="col-lg-5">
+                <img src="assets/images/home-page-p3.webp" alt="" width="500" height="500" class="img-fluid img-sm">
+            </div>
+            <div class="col-lg-7">
+                <h2 class="featurette-heading" id="2">{{getTranslate('homePageP3Lead')}}
+                </h2>
+                <p class="lead text-muted">
+                    {{getTranslate('homePageP3')}}
+                </p>
+            </div>
+        </div>
+        <!-- <hr class="featurette-divider"> -->
+    </div>
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<!-- <footer class="container" style="margin-bottom: 5rem;">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer> -->
