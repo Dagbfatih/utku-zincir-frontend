@@ -371,25 +371,25 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'addressFromDb',
-      value: 'Fevzi Çakmak Mh. 10644 Sk. No:46/G Karatay / Konya / TURKEY',
+      value: 'Fevzi Çakmak Mh. Kaplamacılar San. Sit. 10768. Sk. No:10/P Karatay / Konya / TURKEY',
     },
     {
       id: 14,
       languageId: 2,
       key: 'addressFromDb',
-      value: ' Fevzi Cakmak Dist. 10644 St. No:46/G Karatay / Konya / TURKEY',
+      value: ' Fevzi Cakmak Dist. Kaplamacılar San. Sit. 10768 St. No:10/P Karatay / Konya / TURKEY',
     } /* --------------------- */,
     {
       id: 3,
       languageId: 1,
       key: 'gsmFromDb',
-      value: '+90 542 519 09 40',
+      value: '+90 533 147 11 55',
     },
     {
       id: 14,
       languageId: 2,
       key: 'gsmFromDb',
-      value: '+90 555 481 6282',
+      value: '+90 533 147 11 55',
     } /* --------------------- */,
     {
       id: 3,
@@ -407,13 +407,13 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'email1FromDb',
-      value: 'dagbulent@hotmail.com',
+      value: 'sedat@utkuzincir.com',
     },
     {
       id: 14,
       languageId: 2,
       key: 'email1FromDb',
-      value: 'dagbulent@hotmail.com',
+      value: 'sedat@utkuzincir.com',
     } /* --------------------- */,
     {
       id: 3,
@@ -431,7 +431,7 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'homePageP1Lead',
-      value: 'Zincir Üretimi',
+      value: 'Zincir İmalatı',
     },
     {
       id: 14,
@@ -505,7 +505,7 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'homePageP2Lead',
-      value: 'Tasarımsal Yenilikler',
+      value: 'Kulaklı Zincir',
     },
     {
       id: 14,
@@ -581,7 +581,7 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       id: 3,
       languageId: 1,
       key: 'homePageP3Lead',
-      value: 'Seri Üretim',
+      value: 'Pimli Zincir',
     },
     {
       id: 14,
@@ -620,28 +620,28 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       languageId: 1,
       key: 'footerDescriptionFromDb',
       value:
-        "Utku Zincir Şirketi, 2019 yılında Konya' da Mak. Müh. Bülent Dağ tarafından kurulmuştur.",
+        "Utku Zincir Şirketi, 2019 yılında Konya' da Mak. Müh. Sedat tarafından kurulmuştur.",
     },
     {
       id: 14,
       languageId: 2,
       key: 'footerDescriptionFromDb',
       value:
-        "Utku Zincir Şirketi, 2019 yılında Konya' da Mak. Müh. Bülent Dağ tarafından kurulmuştur.",
+        "Utku Zincir Şirketi, 2019 yılında Konya' da Mak. Müh. Sedat tarafından kurulmuştur.",
     } /* --------------------- */,
     {
       id: 3,
       languageId: 1,
       key: 'aboutUsPFromDb',
       value:
-        "Allent Plastik Kalıp Sanayi Ticaret Limited Şirketi, 2019 yılında Konya' da Mak. Müh. Bülent Dağ tarafından kurulmuştur. 2002 yılından bu yana plastik ürün tasarımı ve bu ürünlerin kalıplanması konularında faaliyet göstermenin kazandırdığı iş tecrübesini siz değerli müşterilerimizin istifadesine sunuyoruz.",
+        "Allent Plastik Kalıp Sanayi Ticaret Limited Şirketi, 2019 yılında Konya' da Mak. Müh. Sedat tarafından kurulmuştur. 2002 yılından bu yana plastik ürün tasarımı ve bu ürünlerin kalıplanması konularında faaliyet göstermenin kazandırdığı iş tecrübesini siz değerli müşterilerimizin istifadesine sunuyoruz.",
     },
     {
       id: 14,
       languageId: 2,
       key: 'aboutUsPFromDb',
       value:
-        'Allent Plastic Molding Industry and Trade Limited Company was established in Konya in 2019 by Mechanical Engineer Bülent Dağ. We offer the business experience gained by working in the fields of plastic product design and molding of these products since 2002, to the benefit of our valued customers.',
+        'Allent Plastic Molding Industry and Trade Limited Company was established in Konya in 2019 by Mechanical Engineer Sedat. We offer the business experience gained by working in the fields of plastic product design and molding of these products since 2002, to the benefit of our valued customers.',
     } /* --------------------- */,
     {
       id: 3,
@@ -1077,14 +1077,14 @@ export class TranslateDbService extends DbServiceRepositoryBase<Translate> {
       languageId: 1,
       key: 'ourFounderLife',
       value:
-        '1978 yılında Şanlıurfa -Ceylanpınar’da doğdu. İlk ve orta öğrenimini Ceylanpınar’da, lise öğrenimini Şanlıurfa’da tamamladı. Teknik konulara, teknolojiye, yeniliklere ve gelişmeye olan ilgisinden dolayı Makine Mühendisi olmayı isterdi. Bunu Karadeniz Teknik Üniversitesi, Mühendislik-Mimarlık Fakültesi, Makine Mühendisliği’ni 1999 yılında tamamlayarak elde etmeyi başardı.\n\nMühendislik eğitimi sırasında ülkemizin en büyük gözde kuruluşlarından biri olan TÜPRAŞ’ta stajyer öğrenci olarak çalıştı.\n\n2000-2001 yılları arasında, askerlik hizmetini yaptığı Afyon’da faaliyet gösteren 500. İstihkam Fabrikası’nda Kompozit Kurşun Geçirmez Miğfer üretim faaliyetlerini deneyimleme imkânı buldu.\n\nProfesyonel kariyerindeki ilk iş deneyimine, sektöründe ülkemizin lider kuruluşu olan Şekeroğlu Plastik Ambalaj firmasında 2002 yılında başladı. Plastik enjeksiyon kalıpçılığı ile ilk tanışması burada gerçekleşti. Kalıpçılıkta işleme hassasiyetlerinin en üst seviyelerde olduğu ince cidarlı rijit plastik ambalajların enjeksiyon kalıplarının tasarımını ve üretimini, bu işletmede 2,5 yıl kadar çalışarak tecrübe etme imkânı buldu.\n\nAmbalaj kalıpçılığında kazandığı deneyimi, 2004 yılında 2 arkadaşıyla birlikte kurduğu Mizan Kalıp Sanayi Tic. Ltd. Şti. ile ticari faaliyete dönüştürdü. Şirket, 5 yıllık kısa bir zaman diliminde Türkiye’nin neredeyse tüm ambalaj üreticileri ile oldukça başarılı çalışmalar yürüttü ve uzun bir referans listesine sahip olmayı başardı.\n\n2009 yılında, sektöründe ülkemizin lider kuruluşu olan AYTOK Filtre Sistemleri Ltd. Şti. bünyesinde uzunca bir süre çalıştı. Filtre üretiminde kullanılması gereken kalıpların işletme bünyesinde üretilebilmesi amacıyla Kalıphane birimini kurdu ve sürekli bu birimin başında çalışmalarını yürüttü. Filtrelerde ve çeşitli sulama ürünlerinde bilgisayar destekli mukavemet analizleri ve bilgisayar destekli akış analizleri yardımıyla birçok ürün revizyonları ve yeni ürün geliştirme projeleri yaptı.\n\nBir süre UTAŞ Savunma San. Tic. A.Ş. firmasında yivsiz av tüfeklerinin ve askeri amaçlı yivli tüfeklerin ürün tasarım ve ürün geliştirme projelerini yürüttü.\n\nÇeşitli kuruluşlarla çok sayıda yivsiz av tüfeği ürün geliştirme çalışmaları yürüttü.\n\n2019 yılında, Allent Plastik Kalıp San. Ve Tic. Ltd. Şti. adında kendi işletmesini kurdu. Böylece Plastik Enjeksiyon Kalıpçılığı, Ürün Geliştirme ve Ürün Prototipleme konularında sahip olduğu deneyimi ticari olarak gerçekleştirme imkânı buldu.\n\nMesleğine sanatçı edasıyla bağlı olan Bülent DAĞ, 2003 yılından bu yana mutlulukla sürdürdüğü evliliğinde sahip olduğu ve geleceğe umutla bakan 2 çocuğuyla birlikte ülkesine daha fazla değer katmak için çalışmalarına devam ediyor.\n\n',
+        '1978 yılında Şanlıurfa -Ceylanpınar’da doğdu. İlk ve orta öğrenimini Ceylanpınar’da, lise öğrenimini Şanlıurfa’da tamamladı. Teknik konulara, teknolojiye, yeniliklere ve gelişmeye olan ilgisinden dolayı Makine Mühendisi olmayı isterdi. Bunu Karadeniz Teknik Üniversitesi, Mühendislik-Mimarlık Fakültesi, Makine Mühendisliği’ni 1999 yılında tamamlayarak elde etmeyi başardı.\n\nMühendislik eğitimi sırasında ülkemizin en büyük gözde kuruluşlarından biri olan TÜPRAŞ’ta stajyer öğrenci olarak çalıştı.\n\n2000-2001 yılları arasında, askerlik hizmetini yaptığı Afyon’da faaliyet gösteren 500. İstihkam Fabrikası’nda Kompozit Kurşun Geçirmez Miğfer üretim faaliyetlerini deneyimleme imkânı buldu.\n\nProfesyonel kariyerindeki ilk iş deneyimine, sektöründe ülkemizin lider kuruluşu olan Şekeroğlu Plastik Ambalaj firmasında 2002 yılında başladı. Plastik enjeksiyon kalıpçılığı ile ilk tanışması burada gerçekleşti. Kalıpçılıkta işleme hassasiyetlerinin en üst seviyelerde olduğu ince cidarlı rijit plastik ambalajların enjeksiyon kalıplarının tasarımını ve üretimini, bu işletmede 2,5 yıl kadar çalışarak tecrübe etme imkânı buldu.\n\nAmbalaj kalıpçılığında kazandığı deneyimi, 2004 yılında 2 arkadaşıyla birlikte kurduğu Mizan Kalıp Sanayi Tic. Ltd. Şti. ile ticari faaliyete dönüştürdü. Şirket, 5 yıllık kısa bir zaman diliminde Türkiye’nin neredeyse tüm ambalaj üreticileri ile oldukça başarılı çalışmalar yürüttü ve uzun bir referans listesine sahip olmayı başardı.\n\n2009 yılında, sektöründe ülkemizin lider kuruluşu olan AYTOK Filtre Sistemleri Ltd. Şti. bünyesinde uzunca bir süre çalıştı. Filtre üretiminde kullanılması gereken kalıpların işletme bünyesinde üretilebilmesi amacıyla Kalıphane birimini kurdu ve sürekli bu birimin başında çalışmalarını yürüttü. Filtrelerde ve çeşitli sulama ürünlerinde bilgisayar destekli mukavemet analizleri ve bilgisayar destekli akış analizleri yardımıyla birçok ürün revizyonları ve yeni ürün geliştirme projeleri yaptı.\n\nBir süre UTAŞ Savunma San. Tic. A.Ş. firmasında yivsiz av tüfeklerinin ve askeri amaçlı yivli tüfeklerin ürün tasarım ve ürün geliştirme projelerini yürüttü.\n\nÇeşitli kuruluşlarla çok sayıda yivsiz av tüfeği ürün geliştirme çalışmaları yürüttü.\n\n2019 yılında, Allent Plastik Kalıp San. Ve Tic. Ltd. Şti. adında kendi işletmesini kurdu. Böylece Plastik Enjeksiyon Kalıpçılığı, Ürün Geliştirme ve Ürün Prototipleme konularında sahip olduğu deneyimi ticari olarak gerçekleştirme imkânı buldu.\n\nMesleğine sanatçı edasıyla bağlı olan Sedat, 2003 yılından bu yana mutlulukla sürdürdüğü evliliğinde sahip olduğu ve geleceğe umutla bakan 2 çocuğuyla birlikte ülkesine daha fazla değer katmak için çalışmalarına devam ediyor.\n\n',
     },
     {
       id: 14,
       languageId: 2,
       key: 'ourFounderLife',
       value:
-        'He was born in Ceylanpınar, Şanlıurfa in 1978. He completed his primary and secondary education in Ceylanpınar and his high school education in Şanlıurfa. He wanted to be a Mechanical Engineer because of his interest in technical issues, technology, innovations and development. He succeeded to achieve this by completing Karadeniz Technical University, Faculty of Engineering and Architecture, Mechanical Engineering in 1999.\n\n   During his engineering education, he worked as an intern at TÜPRAŞ, one of the biggest favorite institutions of our country.\n\n   Between 2000-2001, he had the opportunity to experience the production of Composite Bulletproof Helmets at the 500th Engineering Factory operating in Afyon, where he did his military service.\n\n   He started his first work experience in his professional career in 2002 at Şekeroğlu Plastik Ambalaj, the leading company in our country in its sector. His first acquaintance with plastic injection molding took place here. He had the opportunity to experience the design and production of injection molds of thin-walled rigid plastic packaging, where machining precision in mold making is at the highest level, by working in this company for 2.5 years.\n\n   Mizan Kalıp Sanayi Tic. Ltd. Sti. converted into commercial activity. The company has worked very successfully with almost all packaging manufacturers in Turkey in a short period of 5 years and has managed to have a long reference list.\n\n   In 2009, AYTOK Filter Systems Ltd., which is the leading company of our country in its sector. Sti. He worked in the company for a long time. He established the Molding Unit in order to produce the molds that should be used in filter production within the enterprise and he carried out his works at the head of this unit. He made many product revisions and new product development projects with the help of computer aided strength analysis and computer aided flow analysis in filters and various irrigation products.\n\n   For a while UTAS Defense Industry. Trade Inc. He carried out product design and product development projects for smoothbore shotguns and military rifled rifles at his company.\n\n   He carried out many smooth shotgun product development studies with various organizations.\n\n   In 2019, Allent Plastik Kalıp San. and Tic. Ltd. Sti. He started his own business called Thus, he had the opportunity to commercially realize his experience in Plastic Injection Molding, Product Development and Product Prototyping.\n\n   Bülent DAĞ, who is devoted to his profession as an artist, continues to work to add more value to his country with his two children, whom he has been happily married since 2003 and who are looking to the future with hope.\n\n',
+        'He was born in Ceylanpınar, Şanlıurfa in 1978. He completed his primary and secondary education in Ceylanpınar and his high school education in Şanlıurfa. He wanted to be a Mechanical Engineer because of his interest in technical issues, technology, innovations and development. He succeeded to achieve this by completing Karadeniz Technical University, Faculty of Engineering and Architecture, Mechanical Engineering in 1999.\n\n   During his engineering education, he worked as an intern at TÜPRAŞ, one of the biggest favorite institutions of our country.\n\n   Between 2000-2001, he had the opportunity to experience the production of Composite Bulletproof Helmets at the 500th Engineering Factory operating in Afyon, where he did his military service.\n\n   He started his first work experience in his professional career in 2002 at Şekeroğlu Plastik Ambalaj, the leading company in our country in its sector. His first acquaintance with plastic injection molding took place here. He had the opportunity to experience the design and production of injection molds of thin-walled rigid plastic packaging, where machining precision in mold making is at the highest level, by working in this company for 2.5 years.\n\n   Mizan Kalıp Sanayi Tic. Ltd. Sti. converted into commercial activity. The company has worked very successfully with almost all packaging manufacturers in Turkey in a short period of 5 years and has managed to have a long reference list.\n\n   In 2009, AYTOK Filter Systems Ltd., which is the leading company of our country in its sector. Sti. He worked in the company for a long time. He established the Molding Unit in order to produce the molds that should be used in filter production within the enterprise and he carried out his works at the head of this unit. He made many product revisions and new product development projects with the help of computer aided strength analysis and computer aided flow analysis in filters and various irrigation products.\n\n   For a while UTAS Defense Industry. Trade Inc. He carried out product design and product development projects for smoothbore shotguns and military rifled rifles at his company.\n\n   He carried out many smooth shotgun product development studies with various organizations.\n\n   In 2019, Allent Plastik Kalıp San. and Tic. Ltd. Sti. He started his own business called Thus, he had the opportunity to commercially realize his experience in Plastic Injection Molding, Product Development and Product Prototyping.\n\n   Sedat, who is devoted to his profession as an artist, continues to work to add more value to his country with his two children, whom he has been happily married since 2003 and who are looking to the future with hope.\n\n',
     } /* --------------------- */,
     {
       id: 3,

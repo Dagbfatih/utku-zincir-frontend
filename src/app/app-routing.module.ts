@@ -1,3 +1,4 @@
+import { ReferencesComponent } from './components/references/references.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -12,10 +13,6 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'contact',
-    component: ContactComponent,
-  },
-  {
     path: 'about-us',
     component: AboutUsComponent,
   },
@@ -26,6 +23,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },
+  {
+    path: 'references',
+    component: ReferencesComponent,
   },
 ];
 

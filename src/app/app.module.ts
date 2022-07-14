@@ -12,6 +12,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReferencesComponent } from './components/references/references.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutUsComponent,
     ContactComponent,
     GalleryComponent,
+    ReferencesComponent,
   ],
   imports: [
     BrowserModule,

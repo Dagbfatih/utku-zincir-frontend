@@ -12,15 +12,15 @@
             <div *ngFor="let chain of chains; let i = index;" class="col">
                 <div class="card bg-light h-100">
                     <!-- border-light -->
-                    <img [src]="chain.imagePath" class="card-img-top" alt="..."
+                    <img [src]="baseUrl+chain.imagePath" class="card-img-top" height="350" alt="..."
                         (click)="open(chain.imagePath, content)">
                     <div class="card-body">
                         <h5 class="card-title">
                             {{chain.name}}
                         </h5>
-                        <p class="card-text text-muted" style="overflow-wrap: break-word;">
+                        <!-- <p class="card-text text-muted" style="overflow-wrap: break-word;">
                             {{chain.description}}
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -33,15 +33,15 @@
             <div *ngFor="let chain of chains; let i = index;" class="col">
                 <div class="card tex-white bg-light h-100">
                     <!-- border-light -->
-                    <img [src]="chain.imagePath" class="card-img-top" alt="..."
+                    <img [src]="baseUrl+chain.imagePath" height="350" class="card-img-top" alt="..."
                         (click)="open(chain.imagePath, content)">
                     <div class="card-body">
                         <h5 class="card-title">
                             {{chain.name}}
                         </h5>
-                        <p class="card-text text-muted" style="overflow-wrap: break-word; white-space: pre-wrap;">
+                        <!-- <p class="card-text text-muted" style="overflow-wrap: break-word; white-space: pre-wrap;">
                             {{chain.description}}
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
     </div>
     <div class="modal-body">
         <div class="d-flex justify-content-center align-items-center">
-            <img [src]="currentPhotoPath" class="img-fluid" alt="...">
+            <img [src]="baseUrl+currentPhotoPath" class="img-fluid" alt="...">
         </div>
     </div>
 </ng-template>

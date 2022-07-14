@@ -8,13 +8,13 @@
 
                 <!-- LG LİST -->
                 <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link p-2" href="https://wa.me/905425190940" target="_blank" rel="noopener">
+                    <a class="nav-link p-2" href="https://wa.me/905331471155" target="_blank" rel="noopener">
                         <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
                     </a>
                 </li>
 
                 <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link p-2" href="https://www.instagram.com/allentplastik/" target="_blank"
+                    <a class="nav-link p-2" href="https://www.instagram.com/utku_zincir/" target="_blank"
                         rel="noopener">
                         <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
                     </a>
@@ -85,19 +85,23 @@
 
         <!-- NAVBAR BRAND -->
         <a class="navbar-brand d-flex align-items-center" routerLink="/">
+            <!-- col-md-3 yoktu -->
             <!-- lg -->
-            <img *ngIf="getCurrentLanguageCode() === 'tr-TR'" src="assets/logo/logo.png" height="60"
+            <img *ngIf="getCurrentLanguageCode() === 'tr-TR'" src="assets/logo/logo2.png" height="60"
                 class="d-inline-block align-text-top d-none d-lg-block img-custom">
-            <img *ngIf="getCurrentLanguageCode() === 'en-US'" src="assets/logo/logo.png" height="60"
+            <img *ngIf="getCurrentLanguageCode() === 'en-US'" src="assets/logo/logo2.png" height="60"
                 class="d-inline-block align-text-top d-none d-lg-block img-custom">
 
             <!-- sm -->
-            <img *ngIf="getCurrentLanguageCode() === 'tr-TR'" src="assets/logo/logo.png" height="50"
+            <img *ngIf="getCurrentLanguageCode() === 'tr-TR'" src="assets/logo/logo2.png" height="50"
                 class="d-inline-block align-text-top d-lg-none">
-            <img *ngIf="getCurrentLanguageCode() === 'en-US'" src="assets/logo/logo.png" height="50"
+            <img *ngIf="getCurrentLanguageCode() === 'en-US'" src="assets/logo/logo2.png" height="50"
                 class="d-inline-block align-text-top d-lg-none">
 
             <!-- <h4 class="d-lg-none ms-2 font-arial"><strong>A L L E N T</strong> Plastik & Kalıp</h4> -->
+            <!-- <h4 class="wb-stl-pagetitle">
+                <font color="#e62300">UTKU ZİNCİR</font>
+            </h4> -->
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
@@ -106,7 +110,8 @@
 
         <!-- LG NAVBAR -->
         <div class="d-none d-lg-block collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0 text-start text-custom">
+            <ul class="navbar-nav flex-wrap pt-2 py-md-0 text-start text-custom">
+                <!-- col-md-auto yoktu -->
                 <!-- flex-row vardı -->
                 <li class="nav-item col-md-auto d-lg-none">
                     <a class="nav-link nav-link-custom" aria-current="page" routerLink="/">
@@ -118,7 +123,7 @@
                         {{getTranslate("aboutUs")}}
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         {{getTranslate('ourServices')}}
@@ -149,7 +154,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="nav-item col-md-auto">
                     <!-- her birinde col 6 vardı -->
                     <a class="nav-link nav-link-custom" aria-current="page" routerLink="/gallery">
@@ -170,11 +175,12 @@
 
             <hr class="d-md-none text-dark-50">
 
-            <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-items-center text-start text-custom">
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-items-center text-end text-custom col-md-3">
+                <!-- col-md-3 yoktu text-start olacak -->
 
                 <li class="nav-item col-12 col-lg-auto">
                     <!-- LG -->
-                    <a class="nav-link p-2 d-none d-lg-block" href="https://wa.me/905425190940" target="_blank"
+                    <a class="nav-link p-2 d-none d-lg-block" href="https://wa.me/905331471155" target="_blank"
                         rel="noopener">
                         <i class="fa fa-whatsapp" style="font-size: 24px;" aria-hidden="true"></i>
                     </a>
@@ -182,7 +188,7 @@
 
                 <li class="nav-item col-12 col-lg-auto">
                     <!-- LG -->
-                    <a class="nav-link p-2 d-none d-lg-block" href="https://www.instagram.com/allentplastik/"
+                    <a class="nav-link p-2 d-none d-lg-block" href="https://www.instagram.com/utku_zincir/"
                         target="_blank" rel="noopener">
                         <i class="fa fa-instagram" style="font-size: 24px;" aria-hidden="true"></i>
                     </a>
@@ -262,7 +268,7 @@
                             {{getTranslate("aboutUs")}}
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             {{getTranslate('ourServices')}}
@@ -292,7 +298,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="nav-item col-md-auto">
                         <a class="nav-link nav-link-custom" data-bs-dismiss="offcanvas" aria-current="page"
                             routerLink="/gallery">
@@ -319,7 +325,7 @@
 
                     <li class="nav-item col-12 col-lg-auto">
                         <!-- SM -->
-                        <a class="nav-link d-lg-none" data-bs-dismiss="offcanvas" href="https://wa.me/905425190940"
+                        <a class="nav-link d-lg-none" data-bs-dismiss="offcanvas" href="https://wa.me/905331471155"
                             target="_blank" rel="noopener">
                             <i class="fa fa-whatsapp" style="font-size: 21px; min-width: 18px;" aria-hidden="true"></i>
                             <small class="ms-2 text-secondary">Whatsapp</small>
@@ -368,10 +374,9 @@
                     </li>
 
                     <!-- Language -->
-                    <li class="nav-item dropdown dropdown-menu-end">
+                    <!-- <li class="nav-item dropdown dropdown-menu-end">
                         <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <!-- <i class="fa fa-cog mr-1"></i>  -->
                             <span
                                 class="flag-icon flag-icon-{{getCurrentLanguage().flagCode}} flag-icon-squared"></span>
                             {{getCurrentLanguage()!.languageName}}
@@ -385,8 +390,8 @@
                                 </a>
                             </li>
                         </ul>
+                    </li> -->
 
-                    </li>
                 </ul>
             </div>
         </div>

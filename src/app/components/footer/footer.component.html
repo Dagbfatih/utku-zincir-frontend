@@ -8,7 +8,7 @@
                         <!-- text-muted -->
                         <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
                             aria-label="Allent Plastik">
-                            <img src="assets/logo/logo.png" height="32"
+                            <img src="assets/logo/logo2.png" height="32"
                                 class="d-inline-block align-text-top me-2">
                             <h3 class="text-custom">{{getTranslate('footerBrand')}}</h3>
                             <!-- San. ve Tic. Ltd. Şti. -->
@@ -29,14 +29,14 @@
                     <h3>{{getTranslate("social")}}</h3>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a class="link-dark link" href="https://wa.me/905425190940">
+                            <a class="link-dark link" href="https://wa.me/905331471155">
                                 <i class="fa fa-whatsapp" style="font-size: 21px; min-width: 18px;"
                                     aria-hidden="true"></i>
                                 Whatsapp
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a class="link-dark link" href="https://www.instagram.com/allentplastik/">
+                            <a class="link-dark link" href="https://www.instagram.com/utku_zincir/">
                                 <i class="fa fa-instagram" style="font-size: 21px; min-width: 18px;"
                                     aria-hidden="true"></i>
                                 İnstagram
@@ -64,18 +64,8 @@
                     <h3>{{getTranslate("menu")}}</h3>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a class="link-dark link" routerLink="/machine-parkour">
-                                {{getTranslate('machineParkour')}}
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="link-dark link" routerLink="/account-info">
-                                {{getTranslate('accountInfo')}}
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="link-dark link" routerLink="/corporate-info">
-                                {{getTranslate('invoiceInformation')}}
+                            <a class="link-dark link" routerLink="/">
+                                Ana Sayfa
                             </a>
                         </li>
                         <li class="mb-2">
@@ -96,12 +86,6 @@
                     <h3>{{getTranslate("contact")}}</h3>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a class="link-dark link" href="mailto:{{getTranslate('email2FromDb')}}">
-                                <i class="fa fa-envelope me-1"></i>
-                                {{getTranslate('email2FromDb')}}
-                            </a>
-                        </li>
-                        <li class="mb-2">
                             <a class="link-dark link" href="mailto:{{getTranslate('email1FromDb')}}">
                                 <i class="fa fa-envelope me-1"></i>
                                 {{getTranslate('email1FromDb')}}
@@ -114,9 +98,9 @@
                             </a>
                         </li>
                         <li class="mb-2">
-                            <a class="link-dark link">
-                                <i class="fa fa-phone me-1"></i>
-                                {{getTranslate('phoneNumberFromDb')}}
+                            <a class="link-dark link" href="/contact">
+                                <fa-icon [icon]="faMapMarker" size="1x" class="fa me-2"></fa-icon>
+                                {{getTranslate('addressFromDb')}}
                             </a>
                         </li>
                     </ul>
@@ -145,12 +129,12 @@
 
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li class="ms-3">
-                        <a class="text-muted" href="https://wa.me/905425190940">
+                        <a class="text-muted" href="https://wa.me/905331471155">
                             <i class="fa fa-whatsapp" style="font-size: 24px;"></i>
                         </a>
                     </li>
                     <li class="ms-3">
-                        <a class="text-muted" href="https://www.instagram.com/allentplastik/">
+                        <a class="text-muted" href="https://www.instagram.com/utku_zincir/">
                             <i class="fa fa-instagram" style="font-size: 24px;"></i>
                         </a>
                     </li>

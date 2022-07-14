@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { allTranslates } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-
-  constructor(
-    private router: Router,
-  ) {}
+  faMapMarker = faMapMarkerAlt;
+  
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -28,5 +28,4 @@ export class FooterComponent implements OnInit {
   getTranslate(key: string) {
     return allTranslates.get(key);
   }
-
 }

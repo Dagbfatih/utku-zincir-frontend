@@ -13,7 +13,7 @@
 }
 
 .text-custom {
-  color: #1A638A;
+  color: black;
 }
 
 ul.friend-list {
@@ -21,14 +21,20 @@ ul.friend-list {
   padding: 0;
 }
 
-.text-custom > li > a {
-  color: #1A638A;
+.text-custom .li .a {
+  color: #000026af;
   font-weight: 400;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .text-custom > li > .active {
   font-weight: 600;
-  color: #1A638A;
+  color: #000000;
+}
+
+.nav-link-custom:hover {
+  transition: .15s;
+  color: #2b2bc5;
 }
 
 .fa.fa-whatsapp {
@@ -161,4 +167,17 @@ ul.friend-list .right a.sm {
 
 .dropdown-item-text {
   display: block;
+}
+
+@media (min-width: 1200px) {
+  .wb-stl-pagetitle {
+    font-size: 24px;
+    font-style: normal normal;
+    font: normal normal 24px "Capture it";
+    line-height: normal;
+    color: rgba(6, 0, 0, 0.9);
+    text-align: left;
+    line-height: 41px;
+    text-transform: none;
+  }
 }

@@ -10,10 +10,14 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent implements OnInit {
+  baseUrl = 'assets/';
   currentPhotoPath: string;
   chains: Chain[] = [];
 
-  constructor(private chainService: ChainService,private modalService:NgbModal) {}
+  constructor(
+    private chainService: ChainService,
+    private modalService: NgbModal
+  ) {}
 
   ngOnInit(): void {
     this.getAllChains();

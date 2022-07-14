@@ -8,7 +8,7 @@
                 <div class="col-12 d-flex justify-content-center">
 
                     <!-- LG -->
-                    <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div id="myCarousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button *ngFor="let slide of slidesByLg; let i = index;" type="button"
                                 data-bs-target="#myCarousel" [ngClass]="(i === 0) ? 'active' : ''"
@@ -17,10 +17,11 @@
                         <div class="carousel-inner">
                             <div class="carousel-item" *ngFor="let slide of slidesByLg; let i = index;"
                                 [ngClass]="(i === 0) ? 'active' : ''" data-bs-interval="5000">
-                                <img [src]="slide.path" class="carousel-img w-100 h-100" alt="...">
+                                <img [src]="baseUrl+slide.path" class="carousel-img" alt="...">
 
                                 <div class="container">
-                                    <div class="carousel-caption text-start" style="bottom: initial; top: 40%;">
+                                    <div class="carousel-caption text-start text-custom"
+                                        style="bottom: initial; top: 40%;">
                                         <h1 style="white-space: pre-line; max-width: 550px;">
                                             {{slide.title}}
                                         </h1>
@@ -43,7 +44,6 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -71,7 +71,8 @@
                 </ul>
             </div>
             <div class="col-md-5">
-                <img src="https://kaanelektronik.com/wp-content/uploads/2020/05/3.jpg.webp" alt="" width="500" height="500" class="img-fluid">
+                <img [src]="baseUrl+'images/chain.webp'" alt="" width="500"
+                    height="500" class="img-fluid">
             </div>
         </div>
 
@@ -85,7 +86,7 @@
                 </h2>
                 <p class="lead  text-muted">{{getTranslate('homePageP2')}}
                 </p>
-                <ul>
+                <!-- <ul>
                     <li>
                         <p class="lead">{{getTranslate('homePageP2/l1')}}</p>
                     </li>
@@ -95,13 +96,11 @@
                     <li>
                         <p class="lead">{{getTranslate('homePageP2/l3')}}</p>
                     </li>
-                    <!-- <li>
-                        <p class="lead">{{getTranslate('homePageP2/l4')}}...</p>
-                    </li> -->
-                </ul>
+                </ul> -->
             </div>
             <div class="col-md-5 order-md-1">
-                <img src="https://kaanelektronik.com/wp-content/uploads/2020/05/3.jpg.webp" alt="" width="500" height="500" class="img-fluid">
+                <img [src]="baseUrl+'images/chain-1.png'" alt="" width="500"
+                    height="500" class="img-fluid">
             </div>
         </div>
 
@@ -120,7 +119,8 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <img src="https://kaanelektronik.com/wp-content/uploads/2020/05/3.jpg.webp" alt="" width="500" height="500" class="img-fluid">
+                <img [src]="baseUrl+'images/chain-2.png'" alt="" width="500"
+                    height="500" class="img-fluid">
             </div>
         </div>
 
@@ -143,7 +143,7 @@
                 <div class="col-12 d-flex justify-content-center">
 
                     <!-- SM -->
-                    <div id="myCarouselForSm" class="carousel slide" data-bs-ride="carousel">
+                    <div id="myCarouselForSm" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button *ngFor="let slide of slidesBySm; let i = index;" type="button"
                                 data-bs-target="#myCarouselForSm" [ngClass]="(i === 0) ? 'active' : ''"
@@ -152,16 +152,16 @@
                         <div class="carousel-inner">
                             <div class="carousel-item" *ngFor="let slide of slidesBySm; let i = index;"
                                 [ngClass]="(i === 0) ? 'active' : ''" data-bs-interval="5000">
-                                <img [src]="slide.path" class="carousel-img w-100 h-100" alt="...">
+                                <img [src]="baseUrl + slide.path" class="carousel-img w-100 h-100" alt="...">
 
                                 <div class="container d-none d-md-block d-lg-none">
-                                    <div class="carousel-caption text-center" style="bottom: auto; top: 130px;">
-                                        <h1>{{getTranslate(slide.title)}}</h1>
+                                    <div class="carousel-caption text-center text-dark" style="bottom: auto; top: 130px;">
+                                        <h1>{{slide.title}}</h1>
                                     </div>
                                 </div>
                                 <div class="container d-md-none">
-                                    <div class="carousel-caption text-center" style="bottom: auto; top: 30px;">
-                                        <h1>{{getTranslate(slide.title)}}</h1>
+                                    <div class="carousel-caption text-center text-dark" style="bottom: auto; top: 30px;">
+                                        <h1>{{slide.title}}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -183,16 +183,12 @@
         </div>
     </div>
 
-
-
-
-
     <!-- Overview -->
     <div class="container marketing mt-5" data-bs-spy="scroll" data-bs-target="#myCarousel" data-bs-offset="0"
         tabindex="0">
         <div class="row featurette" style="margin-top: 5%;">
             <div class="col-lg-5">
-                <img src="assets/images/home-page-p1.webp" alt="" width="500" height="500" class="img-fluid img-sm">
+                <img [src]="baseUrl+'images/chain.webp'" alt="" width="500" height="500" class="img-fluid img-sm">
             </div>
             <div class="col-lg-7">
                 <h2 class="featurette-heading" id="0">
@@ -218,7 +214,7 @@
 
         <div class="row featurette" id="1">
             <div class="col-lg-5 order-md-1">
-                <img src="assets/images/home-page-p2.webp" alt="" width="500" height="500" class="img-fluid img-sm">
+                <img [src]="baseUrl+'images/chain-1.png'" alt="" width="500" height="500" class="img-fluid img-sm">
             </div>
             <div class="col-lg-7 order-md-2">
                 <h2 class="featurette-heading-2" id="1">
@@ -227,7 +223,7 @@
                 <p class="lead text-muted">
                     {{getTranslate('homePageP2')}}
                 </p>
-                <ul>
+                <!-- <ul>
                     <li>
                         <p class="lead">{{getTranslate('homePageP2/l1')}}</p>
                     </li>
@@ -240,7 +236,7 @@
                     <li>
                         <p class="lead">{{getTranslate('homePageP2/l4')}}...</p>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 
@@ -248,7 +244,7 @@
 
         <div class="row featurette" id="2">
             <div class="col-lg-5">
-                <img src="assets/images/home-page-p3.webp" alt="" width="500" height="500" class="img-fluid img-sm">
+                <img [src]="baseUrl+'images/chain-2.png'" alt="" width="500" height="500" class="img-fluid img-sm">
             </div>
             <div class="col-lg-7">
                 <h2 class="featurette-heading" id="2">{{getTranslate('homePageP3Lead')}}
