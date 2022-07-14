@@ -11,7 +11,7 @@ export class LanguageDbService extends DbServiceRepositoryBase<Language> {
       id: 1,
       code: 'tr-TR',
       languageName: 'Türkçe',
-      flagCode: 'tr',
+      flagCode: 'tr', 
     },
     {
       id: 2,
